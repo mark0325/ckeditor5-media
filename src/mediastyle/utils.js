@@ -1,7 +1,6 @@
 /**
  * @module media/mediastyle/utils
  */
-import log from '@ckeditor/ckeditor5-utils/src/log';
 import fullIcon from '@ckeditor/ckeditor5-core/theme/icons/object-full-width.svg';
 import leftIcon from '@ckeditor/ckeditor5-core/theme/icons/object-left.svg';
 import rightIcon from '@ckeditor/ckeditor5-core/theme/icons/object-right.svg';
@@ -70,7 +69,7 @@ function _normalizeStyle(style) {
         if (defaultStyles[styleName]) {
             style = Object.assign({}, defaultStyles[styleName]);
         } else {
-            log.warn('There is no such media style of given name.', {name: styleName});
+            console.warn('There is no such media style of given name.', {name: styleName});
             style = {name: styleName};
         }
     } else if (defaultStyles[style.name]) {
