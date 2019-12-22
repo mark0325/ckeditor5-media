@@ -1,4 +1,4 @@
-# @akilli/ckeditor5-media
+# akilli/ckeditor5-media
 
 This media widget for CKEditor 5 can embed image, audio, video and iframe elements wrapped within a figure optionally with a caption. It also provides a minimal API to integrate a media browser by the use of the [window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) function.
 
