@@ -27,8 +27,7 @@ and that your media browser notifies the editor by posting a message p.e. like
 
 ## Demo
 
-https://akilli.github.io/rte/ck5/media.html
-
-## Minimalistic media browser example
-
-https://github.com/akilli/rte/tree/master/browser 
+- [Balloon Editor](https://akilli.github.io/ckeditor5-build-balloon/demo)
+- [Classic Editor](https://akilli.github.io/ckeditor5-build-classic/demo)
+- [Inline Editor](https://akilli.github.io/ckeditor5-build-inline/demo)
+- [Minimalistic Browser](https://github.com/akilli/demo-browser)
