@@ -16,7 +16,7 @@
     "video"
   ],
   "author": "Ayhan Akilli",
-  "license": "MIT",
+  "license": "GPL-2.0-or-later",
   "bugs": "https://github.com/akilli/ckeditor5-media/issues",
   "repository": {
     "type": "git",
