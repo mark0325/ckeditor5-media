@@ -28,8 +28,7 @@
     "theme"
   ],
   "scripts": {
-    "start": "webpack-dev-server --hot",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^16.0.0",
@@ -57,7 +56,6 @@
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-cli": "^3.3.7"
   }
 }

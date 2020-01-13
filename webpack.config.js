@@ -6,16 +6,7 @@ const path = require('path');
 const {styles} = require('@ckeditor/ckeditor5-dev-utils');
 
 module.exports = {
-    mode: 'development',
-    devServer: {
-        allowedHosts: ['ck5-media.app.loc'],
-        contentBase: [path.join(__dirname, 'demo'), '/opt'],
-        host: '0.0.0.0',
-        port: 8080,
-        public: 'ck5-media.app.loc',
-        serveIndex: true,
-    },
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     performance: {hints: false},
     entry: path.resolve(__dirname, 'demo', 'config.js'),
     output: {
