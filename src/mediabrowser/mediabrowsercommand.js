@@ -28,16 +28,9 @@ export default class MediaBrowserCommand extends Command {
             const feat = 'alwaysRaised=yes,dependent=yes,height=' + editorWin.screen.height + ',location=no,menubar=no,' +
                 'minimizable=no,modal=yes,resizable=yes,scrollbars=yes,toolbar=no,width=' + editorWin.screen.width;
             const win = editorWin.open(browser, 'mediabrowser', feat);
-            let origin;
-
-            try {
-                origin = win.origin || win.location.origin;
-            } catch (e) {
-                editorWin.console.log(e);
-                const a = editorDoc.createElement('a');
-                a.href = browser;
-                origin = a.origin;
-            }
+            const a = editorDoc.createElement('a');
+            a.href = browser;
+            const origin = a.origin;
 
             editorWin.addEventListener('message', ev => {
                 if (ev.origin === origin && ev.source === win && !!ev.data.src) {
