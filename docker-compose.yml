@@ -12,9 +12,6 @@ services:
       - source: .
         target: /app
         type: bind
-      - source: ../cms
-        target: /opt/cms
-        type: bind
       - source: ../demo-browser
         target: /opt/demo-browser
         type: bind
