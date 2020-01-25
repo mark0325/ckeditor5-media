@@ -1,27 +1,13 @@
 version: "3.7"
-networks:
-  default:
-    external:
-      name: proxy
 services:
-  ck5-media-node:
+  ck5-media:
+    container_name: ck5-media
     image: akilli/node
+    command: su-exec app ash -c 'npm install && npm run build && npm start'
+    working_dir: /app
     restart: unless-stopped
-    volumes:
-      - source: .
-        target: /app
-        type: bind
-  ck5-media-www:
-    image: akilli/nginx
-    restart: unless-stopped
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.ck5-media.entrypoints=https"
-      - "traefik.http.routers.ck5-media.rule=host(`ck5-media.app.loc`)"
-      - "traefik.http.routers.ck5-media.tls=true"
-      - "traefik.http.services.ck5-media.loadbalancer.server.port=80"
-    extra_hosts:
-      - "ck5-media.app.loc:127.0.0.1"
+    ports:
+      - "8080:8080"
     volumes:
       - source: .
         target: /app

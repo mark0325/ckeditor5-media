@@ -6,8 +6,11 @@ const path = require('path');
 const {styles} = require('@ckeditor/ckeditor5-dev-utils');
 
 module.exports = {
+    mode: 'production',
     devtool: 'source-map',
-    performance: {hints: false},
+    performance: {
+        hints: false
+    },
     entry: path.resolve(__dirname, 'demo', 'config.js'),
     output: {
         path: path.resolve(__dirname, 'demo'),
