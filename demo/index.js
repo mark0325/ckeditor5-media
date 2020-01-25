@@ -5,7 +5,7 @@
         ClassicEditor
             .create(document.querySelector('#rte'), {
                 media: {
-                    browser: '/demo-browser/media.html'
+                    browser: 'https://akilli.github.io/demo-browser/media.html'
                 }
             })
             .then(editor => {

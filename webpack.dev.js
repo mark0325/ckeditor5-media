@@ -8,7 +8,7 @@ module.exports = merge(config, {
     mode: 'development',
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: [path.join(__dirname, 'demo'), '/opt'],
+        contentBase: [path.join(__dirname, 'demo')],
         host: '0.0.0.0',
         port: 8080,
         serveIndex: true,
