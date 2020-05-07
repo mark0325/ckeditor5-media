@@ -1,7 +1,6 @@
 /**
  * @module media/media/mediaediting
  */
-import MediaLoadObserver from './medialoadobserver';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import {modelToViewAttribute, viewToModel} from './converters';
 import {getType, getTypeIds, toMediaWidget} from './utils';
@@ -23,7 +22,7 @@ export default class MediaEditing extends Plugin {
         const types = getTypeIds();
 
         // Observer
-        editor.editing.view.addObserver(MediaLoadObserver);
+        // editor.editing.view.addObserver(MediaLoadObserver);
 
         // Schema
         schema.register('media', {

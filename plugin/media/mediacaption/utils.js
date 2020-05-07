@@ -2,7 +2,7 @@
  * @module media/mediacaption/utils
  */
 import {enablePlaceholder} from '@ckeditor/ckeditor5-engine/src/view/placeholder';
-import {isMediaElement} from '../media/utils';
+import {isMediaElement} from '../utils';
 import {toWidgetEditable} from '@ckeditor/ckeditor5-widget/src/utils';
 
 /**

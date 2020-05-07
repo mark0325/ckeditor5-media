@@ -1,27 +1,28 @@
 /**
- * @module media/mediacaption
+ * @module media/mediabrowser
  */
+import MediaBrowserUI from './mediabrowserui';
 import MediaCaptionEditing from './mediacaption/mediacaptionediting';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import '../theme/mediacaption.css';
+import MediaEditing from "./mediaediting";
 
 /**
- * Media Caption Plugin
+ * Media Browser Plugin
  *
  * @extends module:core/plugin~Plugin
  */
-export default class MediaCaption extends Plugin {
+export default class Media extends Plugin {
     /**
      * @inheritDoc
      */
     static get requires() {
-        return [MediaCaptionEditing];
+        return [MediaEditing, MediaBrowserUI, MediaCaptionEditing];
     }
 
     /**
      * @inheritDoc
      */
     static get pluginName() {
-        return 'MediaCaption';
+        return 'Media';
     }
 }

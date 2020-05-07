@@ -3,7 +3,8 @@
  */
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import {captionElementCreator, getCaptionFromMedia, matchMediaCaption} from './utils';
-import {isMedia} from '../media/utils';
+import {isMedia} from '../utils';
+import "./mediacaption.css";
 
 /**
  * Media Caption Editing Plugin
